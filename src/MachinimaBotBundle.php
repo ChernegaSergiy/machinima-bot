@@ -21,6 +21,10 @@ declare(strict_types=1);
 
 namespace Morfeditorial\MachinimaBotBundle;
 
+use Morfeditorial\MachinimaCoreBundle\Bundle\AutoServicesTrait;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class MachinimaBotBundle extends AbstractBundle {}
+class MachinimaBotBundle extends AbstractBundle
+{
+    use AutoServicesTrait;
+}
